@@ -1,0 +1,189 @@
+
+.mainCard{
+    padding: 10px !important; 
+}
+.mainImg{
+    width: 216px !important;
+    height: 150px !important;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.tovarName{
+    max-width: 300px;
+}
+.card3{
+    width: 100%;
+    margin: 7px 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.time{
+    font-size: 12px;
+    font-weight: 400;
+    color: #406367;
+}
+.formCard{
+    display: flex;
+    padding: 30px 0;
+}
+.formCard input{
+    padding: 16px 13px !important;
+    border-radius: none  !important;
+    height: 100% !important;
+}
+.tugma{
+    color: black;
+    background-color: white;
+    padding: 15px 20px !important;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1px;
+}
+.tugma:hover{
+    color: white;
+    background-color: black;
+    transition: 0.2s;
+}
+.section1{
+    background-color: #F2F4F5;
+    padding: 0 100px;
+}
+.t{
+    border: 1px solid rgba(0, 0, 0, 0.986);
+    width: 20px;
+    height: 20px;
+    
+}
+.ghk{
+    width: 200px;
+    margin: 10px 0;
+}
+.ikkitaF{
+    width: 200px !important;
+}
+.llk{
+    margin: 10px;
+    width: 90px;
+}
+
+
+.tvch{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 !important;
+}
+.t2{
+    margin-left: 15px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.986);
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width:800px) {
+    .tvch{
+        display: block;
+    }
+  
+    .tugma2{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .l2{
+        display: block;
+
+    }   
+    .llk{
+        margin: 10px;
+        width: auto;
+        display: block;
+    }
+    .igrh{
+        display: block;
+    }
+    .t2{
+        display: block;
+       margin: 0;
+     }
+}
+
+.tugma2{
+    border-radius: 1px solid black;
+    padding: 7px;
+    background-color: #F2F4F5;
+    border-radius: 5px;
+   
+}
+.tugma2:hover{
+    border-radius: 3px solid black;
+
+}
+.section8{
+    box-sizing: border-box;
+    padding-left: 29px;
+}
+.card2{
+    display: flex;
+    background-color: white;
+    margin: 10px 0;
+    padding: 7px;
+
+}
+.ghjkl{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:820px) {
+    .card2{
+        display: block;
+        padding-right: 20px;
+    
+    }
+    .narxik{
+        display: block;
+    }
+    .ghjkl{
+        display: block;
+    }
+    .section8{
+        padding-left: 9px;
+    }
+    .formCard{
+        display: block;
+    }
+    .selectkatta{
+        display: block;
+    }
+    .ichidagi{
+        display: block !important;
+        width: 100%;
+    }
+    .ikkitaF{
+        display: block;
+        width: 100%;
+    }
+    .ghk{
+        display: block;
+        width: auto;
+    }
+    .exampleSelect{
+        display: block;
+    }
+    
+    
+}
+.aksiya{
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+.selectkatta{
+    display: flex;
+}
+.igrh{
+    display: flex;
+}

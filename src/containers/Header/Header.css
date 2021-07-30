@@ -1,0 +1,51 @@
+.Heeader{
+   
+    background-color: #002F34;
+    color: white;
+    font-size: 12px;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.headerImg{
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+}
+span{
+    margin: 5px 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.ongmenu{
+    display: flex;
+}
+@media screen and (max-width:700px) {
+    .ongmenu{
+        display: block;
+    }
+    .chaprasm{
+        display: block;
+        text-align: center;
+        padding-left: 10px 0;
+    }
+
+    .Heeader{
+  
+        display: block;
+    }
+    .btnsoz{
+        text-align: center;
+        padding: 10px 0;
+        display: block;
+    }
+    .tugma12{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    
+}

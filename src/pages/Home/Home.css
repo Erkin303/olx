@@ -1,0 +1,166 @@
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 15px 25px;
+}
+.iconimg{
+    width: 100%;
+}
+
+.bigcard{
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-left: 100px !important;
+    margin-right: 20px;
+}
+
+
+.tvch{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+.tugma2{
+    border-radius: 1px solid black;
+    padding: 7px;
+    background-color: #F2F4F5;
+    border-radius: 5px;
+   
+}
+.tugma5{
+     border-radius:none;
+    padding: 7px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.tugma2:hover{
+    border-radius: 3px solid black;
+
+}
+.kattamenu{
+    width: 100%;
+    background-color: #F2F4F5;
+}
+.formCard{
+    padding: 10px;
+}
+
+.mainImg{
+    width: 256px !important;
+    height: 156px !important;
+    object-fit: cover;
+    display: block;
+}
+.yozuv{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+.mainCard{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.ikkikatta{
+    background-color: #F2F4F5;
+}
+.section6{
+    background-color: #002f34;
+    padding: 40px 0;
+}
+.tugma9{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.img7{
+    height: 56px;
+    width: 80px;
+   
+    z-index: 5;
+}
+.section7{
+    padding: 50px 0;
+    background-color: #cbf7ee;
+}
+.jknjk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jknjk p{
+    padding: 20px 0;
+}
+@media screen and (max-width:820px) {
+    .card2{
+        display: block;
+        padding-right: 20px;
+    
+    }
+    .narxik{
+        display: block;
+    }
+    .ghjkl{
+        display: block;
+    }
+    .section8{
+        padding-left: 9px;
+    }
+    .formCard{
+        display: block;
+    }
+    .selectkatta{
+        display: block;
+    }
+    .ichidagi{
+        display: block !important;
+        width: 100%;
+    }
+    .ikkitaF{
+        display: block;
+        width: 100%;
+    }
+    .ghk{
+        display: block;
+        width: auto;
+    }
+    .exampleSelect{
+        display: block;
+    }
+    
+    
+}
+@media screen and (max-width:600px) {
+    .l2{
+        display: block;
+
+    }   
+    .llk{
+        margin: 10px;
+        width: auto;
+        display: block;
+    }
+    .igrh{
+        display: block;
+    }
+    .t2{
+        display: block;
+       margin: 0;
+     }
+}
+@media screen and (max-width:800px) {
+    .tvch{
+        display: block;
+    }
+  
+    .tugma2{
+        margin-top: 20px;
+    }
+}
