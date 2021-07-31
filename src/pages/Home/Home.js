@@ -65,7 +65,7 @@ const catigories = [
     {
         img: "https://categories.olxcdn.com/assets/categories/olxuz/hobbi-otdyh-i-sport-903-2x.png",
         bc: "#ceddff",
-        title: "Хобби, отдых и спорт",
+        title: "Хобби, отдых  и спорт",
         to: "/hobbi"
     },
     {
@@ -128,9 +128,11 @@ export const Home = () => {
 
                         <div className='d-inline-block'>
                             <div style={{ backgroundColor: v.bc }} className='icon'>
-                                <img src={v.img} alt="" className='iconimg' />
+                                <img src={v.img} alt="" className='img-fluid m-auto' />
                             </div>
-                            <p className='text-center linksoz'> {v.title}</p>
+                            <div>
+                                <p className='text-center sozz w-75 m-auto'> {v.title}</p>
+                            </div>
                         </div>
 
                     </Link>
@@ -180,6 +182,9 @@ export const Home = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
+                            <p className='fs-6 fw-bold text-light text-center pt-5'>
+                                Начните бизнес в интернете с OLX!
+                            </p>
 
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">

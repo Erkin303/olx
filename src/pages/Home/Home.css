@@ -1,19 +1,20 @@
 .icon{
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    display: inline-block;
     margin: 15px 25px;
 }
-.iconimg{
-    width: 100%;
-}
+
 
 .bigcard{
     padding: 0 20px;
     margin: 0 auto;
     margin-left: 100px !important;
     margin-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 
@@ -163,4 +164,7 @@
     .tugma2{
         margin-top: 20px;
     }
+}
+.sozz{
+    font-size: 14px !important;
 }
