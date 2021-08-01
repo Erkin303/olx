@@ -38,10 +38,10 @@ export const Category = () => {
             <div className="section111">
 
                 <div className='formCard'>
-                    <input type="text" className='form-control' placeholder='Поиск...' />
-                    <input type="text" className='form-control' placeholder='Весь Узбекистан' />
+                    <input type="text" className='form-control mt-2' placeholder='Поиск...' />
+                    <input type="text" className='form-control mt-2' placeholder='Весь Узбекистан' />
                     <div className='d-flex align-items-center'>
-                        <button className='tugma'>Найти</button>
+                        <button className='tugma mt-2'>Найти</button>
                     </div>
                 </div>
 
@@ -135,20 +135,23 @@ export const Category = () => {
                 </div>
             </div>
 
-            <div className='pt-5 pb-5'>
-                <div className="container">
-                    <p>Основные разделы OLX Рубрики в разделе "Детский мир"</p>
-                    <p className='pb-4'>Узбекистан</p>
+            <div className="section111">
+                <div className='pt-5 pb-5'>
+                    <p class='viloyatlar'>Основные разделы OLX Рубрики в разделе "Детский мир"</p>
+                    <p className='pb-4 viloyatlar'>Узбекистан</p>
+
+
                     <div className="row">
                         {viloyat.map(v => {
                             return <div className="col-lg-3 cl-md-4 col-sm-6">
-                                <p>{v.toun}</p>
+                                <div>
+                                    <p class='viloyatlar'>{v.toun}</p>
+                                </div>
                             </div>
                         })}
 
                     </div>
                 </div>
-
             </div>
 
         </div>
