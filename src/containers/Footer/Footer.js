@@ -51,8 +51,8 @@ export const Footer = () => {
 
 
                     <div className="klm col-lg-4 col-md-6 col-sm-12">
-                        <img src="https://static.olx.uz/static/olxuz/packed/font/2fc9f37e6707acfc0e1255cec57c49a986.svg" alt="" className='rasm33' />
-                        <img src="https://static.olx.uz/static/olxuz/packed/font/2fccd2faa9395d5faed1011516c64dc929.svg" alt="" className='rasm33' />
+                        <img src="https://static.olx.uz/static/olxuz/packed/font/2fc9f37e6707acfc0e1255cec57c49a986.svg" alt="" className='rasm33 mt-2' />
+                        <img src="https://static.olx.uz/static/olxuz/packed/font/2fccd2faa9395d5faed1011516c64dc929.svg" alt="" className='rasm33 mt-2' />
                         <p className='text-secondary'>Бесплатное приложение для твоего телефона</p>
 
                     </div>

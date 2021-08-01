@@ -2,16 +2,29 @@
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    margin: 15px 25px;
+    margin: 15px auto;
+}
+.section111{
+    background-color: #F2F4F5;
+    padding: 0 120px !important;
+}
+.bwords{
+    align-items: center;
+}
+.mainwords{
+    font-size: 13px;
+    color: black;
+}
+.maincard2{
+    width: 100px;
+    min-height: 150px;
+   padding: 30px;
 }
 
-
 .bigcard{
-    padding: 0 20px;
-    margin: 0 auto;
-    margin-left: 100px !important;
-    margin-right: 20px;
+    
     display: flex;
+    width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -52,8 +65,8 @@
 }
 
 .mainImg{
-    width: 256px !important;
-    height: 156px !important;
+    width: 216px !important;
+    height: 150px !important;
     object-fit: cover;
     display: block;
 }
@@ -74,12 +87,18 @@
 }
 .section6{
     background-color: #002f34;
-    padding: 40px 0;
+    padding: 30px 0;
+}
+.rasmdiagramm{
+    width: 130px;
+    height: 130px;
+
 }
 .tugma9{
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    align-items: center;
+    margin-top: 55px;
 }
 .img7{
     height: 56px;
@@ -96,14 +115,37 @@
     justify-content: center;
     align-items: center;
 }
+.maincard3{
+    display: block;  
+}
 .jknjk p{
     padding: 20px 0;
+}
+.labell{
+margin-right: 15px;
 }
 @media screen and (max-width:820px) {
     .card2{
         display: block;
         padding-right: 20px;
     
+    }
+    .bigcard{
+    
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .maincard3{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .section111{
+        background-color: #F2F4F5;
+        padding: 0 50px;
     }
     .narxik{
         display: block;
@@ -138,11 +180,24 @@
     
     
 }
+.umumiyradio{
+    display: flex
+}
+
 @media screen and (max-width:600px) {
     .l2{
         display: block;
 
     }   
+    
+    .tt{
+        width: 20px;
+        height: 20px;
+        margin: 0 5px 0 0;
+    }
+    .umumiyradio{
+    display: block;
+}
     .llk{
         margin: 10px;
         width: auto;
@@ -167,4 +222,9 @@
 }
 .sozz{
     font-size: 14px !important;
+}
+.tt{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
 }

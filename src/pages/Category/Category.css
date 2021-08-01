@@ -41,15 +41,19 @@
     border: none;
     margin-bottom: 1px;
 }
+.section111{
+    background-color: #F2F4F5;
+    padding: 0 20px;
+}
+.section121{
+    padding: 0 100px;
+}
 .tugma:hover{
     color: white;
     background-color: black;
     transition: 0.2s;
 }
-.section1{
-    background-color: #F2F4F5;
-    padding: 0 100px;
-}
+
 .t{
     border: 1px solid rgba(0, 0, 0, 0.986);
     width: 20px;
@@ -76,13 +80,7 @@
     margin-left: 0;
     padding: 0 !important;
 }
-.t2{
-    margin-left: 15px;
-    margin-right: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.986);
-    width: 20px;
-    height: 20px;
-}
+
 @media screen and (max-width:800px) {
     .tvch{
         display: block;
@@ -91,17 +89,18 @@
     .tugma2{
         margin-top: 20px;
     }
+    .section111{
+    background-color: #F2F4F5;
+    padding: 0 50px !important;
 }
+}
+
 @media screen and (max-width:600px) {
     .l2{
         display: block;
 
     }   
-    .llk{
-        margin: 10px;
-        width: auto;
-        display: block;
-    }
+   
     .igrh{
         display: block;
     }
@@ -143,8 +142,22 @@
         padding-right: 20px;
     
     }
+    .llk{
+      margin: 0 !important;
+        width: 100%;
+        display: block;
+    }
+    .section77{
+        display: block !important;
+    }
+    .tvch{
+        margin-bottom: 20px;
+    }
     .aksiya{
        display: none;
+    }
+    .ikkitaF{
+        width: 100% !important;
     }
     .narxik{
         display: block;
@@ -161,6 +174,13 @@
     .selectkatta{
         display: block;
     }
+    .ghk{
+        width: 100% !important;
+        margin: 10px 0;
+    }
+    .select4{
+        width: 1005 !important;
+    }
     .ichidagi{
         display: block !important;
         width: 100%;
@@ -169,12 +189,11 @@
         display: block;
         width: 100%;
     }
-    .ghk{
-        display: block;
-        width: auto;
-    }
     .exampleSelect{
         display: block;
+    }
+    .select5{
+        display: block !important;
     }
     
     
@@ -186,7 +205,16 @@
 }
 .selectkatta{
     display: flex;
+    width: 100%;
 }
 .igrh{
+    display: flex;
+}
+.section77{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.select5{
     display: flex;
 }

@@ -34,48 +34,52 @@ export const Category = () => {
     return (
 
         <div className="section1">
-            <div className="container ">
-                <div className="roww">
 
-                    <div className='formCard'>
-                        <input type="text" className='form-control' placeholder='Поиск...' />
-                        <input type="text" className='form-control' placeholder='Весь Узбекистан' />
-                        <div className='d-flex align-items-center'>
-                            <button className='tugma'>Найти</button>
-                        </div>
+            <div className="section111">
+
+                <div className='formCard'>
+                    <input type="text" className='form-control' placeholder='Поиск...' />
+                    <input type="text" className='form-control' placeholder='Весь Узбекистан' />
+                    <div className='d-flex align-items-center'>
+                        <button className='tugma'>Найти</button>
                     </div>
+                </div>
 
-                    <div className='tvch'>
+                <div className='tvch'>
+                    <div className='umumiyradio'>
                         <div>
-                            <input type="checkbox" className='form-check-input t me-1' id="flexCheckDefault" />
-                            <label class="form-check-label l2" for="flexCheckDefault">
+                            <input type="checkbox" className='form-check-input tt' id="flexCheckDefault" />
+                            <label class="form-check-label labell" for="flexCheckDefault">
                                 Искать в тексте объявлений
                             </label>
+                        </div>
 
-                            <input type="checkbox" className='form-check-input t2 ' id="rflexCheckDefault" />
-                            <label class="form-check-label l2" for="rflexCheckDefault">
+                        <div>
+                            <input type="checkbox" className='form-check-input tt' id="rflexCheckDefault" />
+                            <label class="form-check-label labell" for="rflexCheckDefault">
                                 Только с фото
                             </label>
                         </div>
-                        <button className=' tugma2'>
-                            Добавить в избранное
-                        </button>
-
-
-
                     </div>
+                    <button className=' tugma2'>
+                        Добавить в избранное
+                    </button>
 
-                    <div className='selectkatta'>
-                        <div className='ichidagi'>
+                </div>
+
+
+                <div class='section77'>
+                    <div className="select5">
+                        <div class='select4'>
                             <label htmlFor="exampleSelect" className='mb-3 '>Рубрика</label>
-                            <select name="select" id="exampleSelect" className='form-control ghk'>
+                            <select name="select" id="exampleSelect" className='form-control ghk me-1'>
                                 <option value="select">Игрушки</option>
                                 <option value="select">Wears</option>
                                 <option value="select">Sweets</option>
                             </select>
                         </div>
 
-                        <div className='ichidagi'>
+                        <div class='select4'>
                             <label htmlFor="uexampleSelect" className='mb-3'>Состояние</label>
                             <select name="select" id="uexampleSelect" className='form-control ghk'>
                                 <option value="select">Все</option>
@@ -83,49 +87,52 @@ export const Category = () => {
                                 <option value="select">Sweets</option>
                             </select>
                         </div>
-                        <div className='ikkitaF'>
-                            <p>Цена</p>
-                            <div className='igrh'>
-                                <input type="number" placeholder='от' className='form-control llk' />
-                                <input type="number" placeholder='до' className='form-control llk' />
-                            </div>
+                    </div>
 
-
+                    <div class='d-inline-block'>
+                        <p>Цена</p>
+                        <div class='d-flex'>
+                            <input type="number" placeholder='от' className='form-control llk' />
+                            <input type="number" placeholder='до' className='form-control llk' />
                         </div>
                     </div>
 
-
                 </div>
+
 
             </div>
-            <h2 className='mt-3 mb-3 ms-3'>Топ-объявления</h2>
-            <div className="row">
-                <section className='section8 col-lg-9 col-md-12'>
 
-                    {data.map(v => {
-                        return <div>
-                            <div className='card2'>
-                                <div>
-                                    <img src={v.img} alt="" className='mainImg img-fluid' />
-                                </div>
-                                <div className='card3'>
-                                    <div className='ghjkl w-100 '>
-                                        <p className='tovarName'>{v.title}</p>
-                                        <p className='narxik'>{v.price}</p>
+
+            <div className="section121">
+                <h2 className='mt-3 mb-3 ms-3'>Топ-объявления</h2>
+                <div className="row">
+                    <section className='section8 col-lg-9 col-md-12'>
+
+                        {data.map(v => {
+                            return <div>
+                                <div className='card2'>
+                                    <div>
+                                        <img src={v.img} alt="" className='mainImg img-fluid' />
                                     </div>
-                                    <p className='time'>{v.time}</p>
+                                    <div className='card3'>
+                                        <div className='ghjkl w-100 '>
+                                            <p className='tovarName'>{v.title}</p>
+                                            <p className='narxik'>{v.price}</p>
+                                        </div>
+                                        <p className='time'>{v.time}</p>
+                                    </div>
                                 </div>
+
                             </div>
-
+                        })}
+                    </section>
+                    <div className="col-lg-3 col-md-12">
+                        <div className='aksiya text-center'>
+                            <img src="https://tpc.googlesyndication.com/simgad/14648128467082575446?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmXKJYKClNQWic9Z7Gn3LPyTMk08g" alt="" />
                         </div>
-                    })}
-                </section>
-                <div className="col-lg-3 col-md-12">
-                    <div className='aksiya text-center'>
-                        <img src="https://tpc.googlesyndication.com/simgad/14648128467082575446?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qmXKJYKClNQWic9Z7Gn3LPyTMk08g" alt="" />
                     </div>
-                </div>
 
+                </div>
             </div>
 
             <div className='pt-5 pb-5'>
