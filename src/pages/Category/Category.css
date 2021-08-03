@@ -42,11 +42,13 @@
     margin-bottom: 1px;
 }
 .section111{
-    background-color: #F2F4F5;
     padding: 0 20px;
+    color: #00343a;
+   
+    
 }
 .section121{
-    padding: 0 100px;
+    padding: 20px 100px;
 }
 .tugma:hover{
     color: white;
@@ -194,6 +196,7 @@
     }
     .select5{
         display: block !important;
+        color: #215a61;
     }
     
     
@@ -213,7 +216,7 @@
 .section77{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    padding: 25px 0;
 }
 .select5{
     display: flex;

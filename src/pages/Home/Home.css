@@ -13,12 +13,10 @@
 }
 .mainwords{
     font-size: 13px;
-    color: black;
 }
 .maincard2{
     width: 140px;
     min-height: 150px;
-   padding: 30px;
 }
 
 .bigcard{
@@ -58,7 +56,6 @@
 }
 .kattamenu{
     width: 100%;
-    background-color: #F2F4F5;
 }
 .formCard{
     padding: 10px;
@@ -82,9 +79,12 @@
    
 
 }
-.ikkikatta{
-    background-color: #F2F4F5;
+.umumiyCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 .section6{
     background-color: #002f34;
     padding: 30px 0;

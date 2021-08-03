@@ -2,6 +2,10 @@ import './Home.css'
 import { Container } from '../../containers/Container/Container'
 import { Link } from 'react-router-dom';
 import data2 from '../../data/detskiy-mir';
+import { useContext } from 'react';
+import ThemeG from '../../theme-context';
+import HomeW from './HomeW'
+import HomeW2 from './HomeW2'
 
 
 import React from 'react'
@@ -84,9 +88,11 @@ const catigories = [
 
 
 export const Home = () => {
+    const { theme, Toggletheme } = useContext(ThemeG)
+    console.log(theme, Toggletheme);
     return (
         <div>
-            <div className="section111">
+            <HomeW className={`section111 ${theme}`}>
                 <div className='kattamenu'>
                     <div className='formCard container'>
                         <input type="text" className='form-control mt-2' placeholder='Поиск...' />
@@ -117,11 +123,7 @@ export const Home = () => {
                         <button className=' tugma2'>
                             Добавить в избранное
                         </button>
-
                     </div>
-
-
-
                 </div>
 
 
@@ -159,15 +161,13 @@ export const Home = () => {
                                             <div className=' maincard3 '>
                                                 <img src={v.img} alt="" className='mainImg  img-fluid' />
                                             </div>
-
                                         </div>
                                         <div className='yozuv'>
                                             <p className='tovarName'>{v.title}</p>
                                             <div>
                                                 <p className='time p-0 m-0'>{v.time}</p>
-                                                <p>{v.price}</p>
+                                                <p className='narxiPrice'>{v.price}</p>
                                             </div>
-
                                         </div>
                                     </div>
 
@@ -181,9 +181,9 @@ export const Home = () => {
                         <button className=' tugma2 text-center'>Посмотреть все</button>
                     </div>
                 </section>
-            </div>
+            </HomeW>
 
-            <div className="section6">
+            <HomeW2 className={`section6 ${theme}`}>
                 <div className="container d-flex justify-content-center">
                     <div className="row ">
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -192,7 +192,7 @@ export const Home = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
-                            <p className='fs-6 fw-bold text-light text-center pt-5'>
+                            <p className='fs-6 text-center pt-5 sozlar'>
                                 Начните бизнес в интернете с OLX!
                             </p>
 
@@ -205,7 +205,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </HomeW2>
 
 
             <section className='section7'>
@@ -228,7 +228,7 @@ export const Home = () => {
                 </div>
             </section>
 
-            <div className="section111">
+            <HomeW className={`section111 ${theme}`}>
                 <div className='container pt-5 pb-5'>
                     <div className="row">
                         <div className="col-12">
@@ -242,7 +242,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </HomeW>
 
 
 

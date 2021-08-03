@@ -4,6 +4,9 @@ import React from 'react'
 import { Container } from '../../containers/Container/Container'
 import datas from '../../data'
 import { Link, useParams } from 'react-router-dom'
+import CategoryW2 from './CategoryW2'
+import { useContext } from 'react';
+import ThemeG from '../../theme-context';
 
 const viloyat = [
     { toun: "Ташкентская область (5 503)" },
@@ -27,15 +30,15 @@ export const Category = () => {
     const obj = datas.filter(v => v.category == category)[0];
     const data = obj.data;
 
-    console.log(datas);
-    console.log(obj);
-    console.log(data);
+
+    const { theme, Toggletheme } = useContext(ThemeG)
+    console.log(theme, Toggletheme);
 
     return (
 
         <div className="section1">
 
-            <div className="section111">
+            <CategoryW2 className={`section111 ${theme}`}>
 
                 <div className='formCard'>
                     <input type="text" className='form-control mt-2' placeholder='Поиск...' />
@@ -88,7 +91,6 @@ export const Category = () => {
                             </select>
                         </div>
                     </div>
-
                     <div class='d-inline-block'>
                         <p>Цена</p>
                         <div class='d-flex'>
@@ -96,14 +98,11 @@ export const Category = () => {
                             <input type="number" placeholder='до' className='form-control llk' />
                         </div>
                     </div>
-
                 </div>
+            </CategoryW2>
 
 
-            </div>
-
-
-            <div className="section121">
+            <CategoryW2 className={`section121 ${theme}`}>
                 <h2 className='mt-3 mb-3 ms-3'>Топ-объявления</h2>
                 <div className="row">
                     <section className='section8 col-lg-9 col-md-12'>
@@ -133,9 +132,9 @@ export const Category = () => {
                     </div>
 
                 </div>
-            </div>
+            </CategoryW2>
 
-            <div className="section111">
+            <CategoryW2 className={`section111 ${theme}`}>
                 <div className='pt-5 pb-5'>
                     <p class='viloyatlar'>Основные разделы OLX Рубрики в разделе "Детский мир"</p>
                     <p className='pb-4 viloyatlar'>Узбекистан</p>
@@ -152,7 +151,7 @@ export const Category = () => {
 
                     </div>
                 </div>
-            </div>
+            </CategoryW2>
 
         </div>
 
