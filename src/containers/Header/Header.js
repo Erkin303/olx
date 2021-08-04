@@ -6,10 +6,12 @@ import { Container } from '../Container/Container';
 import { useContext } from 'react';
 import ThemeG from '../../theme-context';
 import HeaderWrapper from './HeaderWrapper'
+import { render } from 'react-dom';
 
 export const Header = () => {
     const { theme, Toggletheme } = useContext(ThemeG)
     console.log(theme, Toggletheme);
+
 
     return (
         <div>
@@ -25,8 +27,9 @@ export const Header = () => {
                         </div>
                         <div className='tugma12'>
                             <button className='btn btn-light'>Подать объявление</button>
-                            <button onClick={Toggletheme} className={`ms-1 btn btn-${theme == "light" ? "light" : "dark"}`} >{theme == "light" ? "Light" : "Dark"} </button>
                         </div>
+                        <button onClick={Toggletheme} className={`ms-1 btn btn-${theme == "light" ? "light" : "dark"}`} >{theme == "light" ? "Light" : "Dark"} </button>
+
                     </div>
                 </div>
             </HeaderWrapper>

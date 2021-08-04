@@ -40,7 +40,7 @@ const data = [
         img: "https://apollo-olx.cdnvideo.ru/v1/files/eycad9lzt54j2-UZ/image;s=644x461",
         price: "2 080 000 сум",
         time: "Ташкент, Шайхантахурский район"
-    },
+    }
 
 
 ]

@@ -7,6 +7,7 @@ import { Link, useParams } from 'react-router-dom'
 import CategoryW2 from './CategoryW2'
 import { useContext } from 'react';
 import ThemeG from '../../theme-context';
+import { useState } from 'react'
 
 const viloyat = [
     { toun: "Ташкентская область (5 503)" },
@@ -25,7 +26,11 @@ const viloyat = [
 export const Category = () => {
     const { category } = useParams();
 
+    const [searchTerm, setsearchTerm] = useState("")
+
+
     // asosiy map
+
 
     const obj = datas.filter(v => v.category == category)[0];
     const data = obj.data;
@@ -41,7 +46,7 @@ export const Category = () => {
             <CategoryW2 className={`section111 ${theme}`}>
 
                 <div className='formCard'>
-                    <input type="text" className='form-control mt-2' placeholder='Поиск...' />
+                    <input type="text" className='form-control mt-2' placeholder='Поиск...' onChange={event => { setsearchTerm(event.target.value) }} />
                     <input type="text" className='form-control mt-2' placeholder='Весь Узбекистан' />
                     <div className='d-flex align-items-center'>
                         <button className='tugma mt-2'>Найти</button>
@@ -107,7 +112,14 @@ export const Category = () => {
                 <div className="row">
                     <section className='section8 col-lg-9 col-md-12'>
 
-                        {data.map(v => {
+                        {data.filter((value) => {
+                            if (searchTerm == '') {
+                                return value;
+                            } else if (value.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                                return value;
+                            }
+
+                        }).map(v => {
                             return <div>
                                 <div className='card2'>
                                     <div>

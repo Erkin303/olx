@@ -1,7 +1,7 @@
 import './Home.css'
 import { Container } from '../../containers/Container/Container'
 import { Link } from 'react-router-dom';
-import data2 from '../../data/detskiy-mir';
+import data2 from '../../data/allinf';
 import { useContext } from 'react';
 import ThemeG from '../../theme-context';
 import HomeW from './HomeW'
@@ -9,6 +9,7 @@ import HomeW2 from './HomeW2'
 
 
 import React from 'react'
+import { useState } from 'react';
 
 
 const catigories = [
@@ -90,12 +91,15 @@ const catigories = [
 export const Home = () => {
     const { theme, Toggletheme } = useContext(ThemeG)
     console.log(theme, Toggletheme);
+
+    const [kichikMenu, setkichikMenu] = useState("")
+    console.log(kichikMenu);
     return (
         <div>
             <HomeW className={`section111 ${theme}`}>
                 <div className='kattamenu'>
                     <div className='formCard container'>
-                        <input type="text" className='form-control mt-2' placeholder='Поиск...' />
+                        <input type="text" className='form-control mt-2' placeholder='Поиск...' onChange={event => { setkichikMenu(event.target.value) }} />
                         <input type="text" className='form-control mt-2' placeholder='Весь Узбекистан' />
                         <div className='d-flex align-items-center'>
                             <button className='tugma mt-2'>Найти</button>
@@ -131,7 +135,13 @@ export const Home = () => {
                 <h1 className='pt-2 mb-5 pb-2 text-center mt-5'>Главные категории</h1>
                 <div className='d-flex justify-content-center'>
                     <div className='bigcard'>
-                        {catigories.map(v => {
+                        {catigories.filter((value) => {
+                            if (kichikMenu == "") {
+                                return value;
+                            } else if (value.title.toLowerCase().includes(kichikMenu.toLowerCase())) {
+                                return value;
+                            }
+                        }).map(v => {
                             return <Link to={v.to} key={v.to}>
 
                                 <div className='d-inline-block maincard2'>
