@@ -8,6 +8,9 @@ import CategoryW2 from './CategoryW2'
 import { useContext } from 'react';
 import ThemeG from '../../theme-context';
 import { useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const viloyat = [
     { toun: "Ташкентская область (5 503)" },
@@ -27,6 +30,11 @@ export const Category = () => {
     const { category } = useParams();
 
     const [searchTerm, setsearchTerm] = useState("")
+    useEffect(() => {
+        AOS.init();
+
+    })
+
 
 
     // asosiy map
@@ -120,7 +128,7 @@ export const Category = () => {
                             }
 
                         }).map(v => {
-                            return <div>
+                            return <div data-aos="fade-right">
                                 <div className='card2'>
                                     <div>
                                         <img src={v.img} alt="" className='mainImg img-fluid' />
